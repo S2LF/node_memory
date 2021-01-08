@@ -52,5 +52,9 @@ app.use((error: Error, _req: Request, res: Response, _next: NextFunction) => {
 });
 
 // Start Server
-// eslint-disable-next-line no-console
-app.listen(5000, () => console.log('Server started on 5000'));
+// // eslint-disable-next-line no-console
+// app.listen(5000, () => console.log('Server started on 5000'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
