@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from 'express';
 import mongoose, { Error } from 'mongoose';
 import cors from 'cors';
+import 'dotenv/config';
 import asyncHandler from 'express-async-handler';
 // eslint-disable-next-line import/extensions
 import memoryController from './controllers/memory';
